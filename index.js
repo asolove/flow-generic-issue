@@ -1,21 +1,13 @@
 // @flow
 
-export type CartItem<Extras> = {
-  type: string,
-  extras: Extras,
+type Thingy = {
+  a: bool,
 }
 
-
-type CartItemExtras = {
-  name: string
+const t1: Thingy = {
+  a: true,
 }
 
-function typeToCartItem(type: string): CartItem<void> {
-  return { type, extras: void 0 }
-}
-
-type SpecificCartItem = CartItem<CartItemExtras>
-
-function typeToSpecificCartItem(type: string): SpecificCartItem {
-  return typeToCartItem(type)
+const t2: Thingy = {
+  ...{ a: undefined }
 }
