@@ -1,0 +1,14 @@
+{
+  "name": "flow-generic-issue",
+  "version": "1.0.0",
+  "description": "Minimal reproduction of possible flow generic bug",
+  "main": "index.js",
+  "scripts": {
+    "test": "flow check"
+  },
+  "author": "Adam Solove",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.29.0"
+  }
+}
